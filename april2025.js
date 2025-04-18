@@ -217,3 +217,18 @@ function SeriesSum(n) {
   function SeriesSum(n, s = 0) {
     return n ? SeriesSum(n - 1, s + 1 / (3 * n - 2)) : s.toFixed(2)
 }  
+
+//Make a function that returns the value multiplied by 50 and increased by 6. If the value entered is a string it should return "Error".
+
+function problem(x){
+    //your code here
+    //create variables for equation
+    let multiResult = (x * 50)
+    let result = multiResult + 6
+    //make conditional for equation
+    if (typeof x ==  'number') {
+      return result
+    }else{
+      return 'Error'
+    }
+  }
